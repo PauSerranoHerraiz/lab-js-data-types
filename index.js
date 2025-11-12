@@ -24,17 +24,25 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
+/*
 const firstLetter1 =part1.charAt(0);
 const firstCap1 = firstLetter1.toUpperCase();
 const rest1 =part1.slice(1);
 
 const firstLetter2 =part2.charAt(0);
 const firstCap2 = firstLetter2.toUpperCase();
-const rest2 =part2.slice(1);
+const rest2 =part2.slice(1); */
+
+
+const cameLtaiL =
+  part1.slice(0, -1) + part1.slice(-1).toUpperCase() +
+  part2.slice(0, -1) + part2.slice(-1).toUpperCase();
+
+
 
 // Print the cameLtaiL-formatted string
-console.log (firstCap1+rest1 + " " + firstCap2+rest2)
-
+//console.log (firstCap1+rest1 + " " + firstCap2+rest2)
+console.log(cameLtaiL)
 
 
 /*******************************************
@@ -71,14 +79,28 @@ const b = false;
 // Try and guess the output of the below expressions first and write your answers down:
 const expression1 = a && b; //false
 
+console.log (expression1)
+
 const expression2 = a || b; //true
+
+console.log (expression2)
 
 const expression3 = !a && b; //false
 
+console.log (expression3)
+
 const expression4 = !(a && b); //false
+
+console.log (expression4)
 
 const expression5 = !a || !b; //true
 
+console.log (expression5)
+
 const expression6 = !(a || b); //false
 
+console.log (expression6)
+
 const expression7 = a && a; //true
+
+console.log (expression7)
